@@ -1,0 +1,42 @@
+.nav {
+    /* Add padding and margin to the navigation container */
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+  }
+  
+.nav h2 {
+/* Add margin to the heading */
+margin-top: 5%;
+font-size: 42px;
+}
+
+/* Apply styles to the ul element */
+.nav-links {
+list-style: none; /* Remove list numbering */
+padding: 0; /* Remove default padding */
+margin-top: 10%;
+}
+.nav-links ul {
+    list-style: none; /* Remove list numbering */
+    padding: 0; /* Remove default padding */
+    margin-top: 10%;
+}
+.nav-links li {
+
+margin-bottom: 10%; /* Add gap between list items */
+border: 1px solid #ccc; /* Add border to each list item */
+}
+
+.nav-links li a {
+/* Add styles to the navigation links */
+display: block; /* Make links fill entire width of list item */
+padding: 10px; /* Add padding to links */
+text-decoration: none; /* Remove default underline */
+color: #0da9c5; /* Change link color */
+font-size: 36px;
+
+}

@@ -1,0 +1,62 @@
+.myapp{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+}
+
+
+.qr-validator {
+    text-align: center;
+    padding: 2rem 1rem;
+    width:400px;
+    height: 400px;
+    align-items: center;
+    
+  }
+  
+  .qr-validator h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .qr-validator button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    color: aqua;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .qr-scanner {
+    margin-bottom: 2rem;
+  }
+  
+  .qr-data {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  .qr-data h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .qr-data p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .qr-validator .error {
+    color: red;
+    font-size: 1.4rem;
+  }
+  
