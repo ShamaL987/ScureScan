@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    command: sh -c "sleep 10s && npm run dev"
+    ports:
+      - '8081:8081'
+    depends_on:
+      - mysql
+
+  mysql:
+    build: ./mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+    ports:
+      - '3306:3306'
