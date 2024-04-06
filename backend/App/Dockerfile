@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Create a non-root user
-RUN adduser --disabled-password --gecos '' appuser
+RUN adduser --disabled-password --gecos '' --uid 10001 appuser
 
 # Set ownership of the working directory to the non-root user
 RUN chown -R appuser:appuser /usr/src/app
