@@ -1,9 +1,9 @@
 version: 0.1
 
 endpoints:
-  - name: Backend REST API
+  - name: Node.js Backend
     port: 8081
     type: REST
     networkVisibility: Project
     context: /
-    schemaFilePath: openapi.yaml  # Path to your OpenAPI schema file
+    schemaFilePath: openapi.yaml
