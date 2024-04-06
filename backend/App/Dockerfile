@@ -13,6 +13,15 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
+# Create a non-root user
+RUN adduser --disabled-password --gecos '' appuser
+
+# Set ownership of the working directory to the non-root user
+RUN chown -R appuser:appuser /usr/src/app
+
+# Switch to the non-root user
+USER appuser
+
 # Expose the port your app runs on
 EXPOSE 8081
 
