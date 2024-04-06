@@ -1,11 +1,11 @@
-# Use a specific version of Node.js image as base image for stability
-FROM node:14
+# Use official Node.js image as base image
+FROM node:latest
 
 # Set working directory in the container
 WORKDIR /usr/src/app
 
-# Create a non-root user with UID within the specified range
-RUN adduser --disabled-password --gecos '' --uid 15000 appuser
+# Create a non-root user with specific UID
+RUN adduser --disabled-password --gecos '' --uid 10014 appuser
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
